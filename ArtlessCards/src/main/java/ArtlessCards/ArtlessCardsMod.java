@@ -16,6 +16,13 @@ public class ArtlessCardsMod implements PostInitializeSubscriber {
     private static final String MODNAME = "Artless Cards";
     private static final String AUTHOR = "Mistress Alison";
     private static final String DESCRIPTION = "Adds support for artless cards";
+
+    // =============== INPUT TEXTURE LOCATION =================
+
+    //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
+    public static final String BADGE_IMAGE = "ArtlessCardsResources/images/Badge.png";
+
+    // =============== /INPUT TEXTURE LOCATION/ =================
     
     // =============== SUBSCRIBE, INITIALIZE =================
     
@@ -60,7 +67,7 @@ public class ArtlessCardsMod implements PostInitializeSubscriber {
         logger.info("Loading badge image and mod options");
         
         // Load the Mod Badge
-        Texture badgeTexture = new Texture("Badge.png");
+        Texture badgeTexture = new Texture(BADGE_IMAGE);
 
         // Create the Mod Menu
         ModPanel settingsPanel = new ModPanel();
